@@ -4,3 +4,7 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+.custom-card-padding .card-body {
+    padding: 20px; /* Ajusta el valor según sea necesario */
+}
