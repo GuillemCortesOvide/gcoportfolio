@@ -1,10 +1,9 @@
-import { YT_API_KEY } from './config.py';
-
+import { YT_API_KEY } from './config.js';
 
 
 // Function to fetch follower count from YouTube API
 async function getYouTubeSubscribers() {
-    const response = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=gc_tech&key=${YT_API_KEY}`);
+    const response = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCkuvibRmQebYFeuAgQJK38wkey=${YT_API_KEY}`);
     const data = await response.json();
     return data.items[0].statistics.subscriberCount;
 }
