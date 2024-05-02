@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillem Cortes Ovide - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Additional custom styles */
+        .center-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+        }
+        .skill-icon {
+            margin: 10px; /* Adjust margin between icons */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/guillem-cortes-ovide/">My Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center my-5">
+        <img src="me.jpg" alt="Guillem Picture" class="img-fluid rounded-circle" style="max-width: 200px;">
+        <h1>Guillem Cortes Ovide</h1>
+        <h3>Junior Backend Developer</h3>
+    </header>
+
+    <section id="skills" class="container my-5">
+        <h2 class="text-center">Skills</h2>
+        <div class="row center-icons">
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-html5 fa-3x"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-python fa-3x"></i>
+                <p>Python</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fas fa-network-wired fa-3x"></i>
+                <p>API</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-bootstrap fa-3x"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-python fa-3x"></i>
+                <p>Flask</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-python fa-3x"></i>
+                <p>Django</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fas fa-database fa-3x"></i>
+                <p>SQLite</p>
+            </div>
+            <div class="col-6 col-sm-3 skill-icon">
+                <i class="fab fa-docker fa-3x"></i>
+                <p>Docker</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="container my-5">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <!-- Adjusted columns for smaller screens -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Ticket Chat Bot</h3>
+                        <p class="card-text">This is a Chatbot written in Python which gives you status information about Trello ticket or card status. Make sure you replace your API keys and secret in the keys.py file!</p>
+                        <a href="https://github.com/GuillemCortesOvide/T_BOT" class="btn btn-primary">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">CRUD API To Do Lists</h3>
+                        <p class="card-text">This repository contains a CRUD API for managing users, lists, and tasks. It's designed to provide a simple implementation for backend development exploration. The API can be run using uvicorn for smooth functionality or you can also use Docker and try it.</p>
+                        <a href="https://github.com/GuillemCortesOvide/mytodoapil" class="btn btn-primary">GitHub Repository</a>
+                    </div>
+                </div>
+           
+
+    </section>
+
+    <footer id="contact" class="container text-center my-5">
+        <p>Contact: <a href="mailto:guillem16594@gmail.com">guillem16594@gmail.com</a></p>
+    </footer>
+
+    <!-- Bootstrap JavaScript (bundle includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
