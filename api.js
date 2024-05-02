@@ -1,3 +1,4 @@
+
 import { YT_API_KEY } from './config.js';
 
 // Function to fetch follower count from YouTube API
@@ -7,7 +8,7 @@ async function getYouTubeSubscribers() {
     return data.items[0].statistics.subscriberCount;
 }
 
-async function updateFollowers() {
+async function updateSubs() {
     try {
         const youtubeSubscribers = await getYouTubeSubscribers();
         document.getElementById('youtube-subscribers').innerText = youtubeSubscribers;
@@ -16,5 +17,6 @@ async function updateFollowers() {
     }
 }
 
-updateFollowers();
+updateSubs();
+
 
